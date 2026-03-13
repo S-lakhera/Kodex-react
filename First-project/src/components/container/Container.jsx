@@ -1,4 +1,4 @@
-import Card from "../productCard/card.jsx";
+import Card from "../productCard/Card.jsx";
 import products from "../../data/products.js";
 
 function Container() {
