@@ -1,9 +1,6 @@
 
 function Card(item) {
     const product = item.data
-    console.log(product.image);
-
-
     return (
         <div className="w-2/7 rounded-xl px-10 py-5 shadow-[0_5px_15px_rgb(0,0,0,0.1)] hover:shadow-[0_10px_15px_rgb(0,0,0,0.2)] hover:-mt-1 transition-all duration-300 cursor-pointer">
             <div className="overflow-hidden rounded-xl">
