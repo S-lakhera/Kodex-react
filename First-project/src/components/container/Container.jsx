@@ -1,5 +1,5 @@
-import Card from "../productCard/card";
-import products from "../../data/products";
+import Card from "../productCard/card.jsx";
+import products from "../../data/products.js";
 
 function Container() {
     return (<>
