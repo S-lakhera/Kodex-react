@@ -5,12 +5,21 @@ import Navbar from "../navbar/Navbar.jsx";
 import Cart from "../modal/Cart.jsx";
 
 function Container() {
+    const [isOpen, setIsOpen] = useState(false);
     const [products, setProducts] = useState(() => {
 
         const savedProducts = localStorage.getItem("myProducts");
         return savedProducts ? JSON.parse(savedProducts) : data
     })
-    const [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() => {
+        localStorage.setItem("myProducts", JSON.stringify(products));
+    }, [products])
+
+    const handleDelete = (id) => {
+        let updatedProducts = products.filter((elem) => elem.id !== id)
+        setProducts(updatedProducts)
+    }
 
     const [cart, setCart] = useState(() => {
         const cartArr = localStorage.getItem("cart");
@@ -19,27 +28,19 @@ function Container() {
 
     const addToCart = (id) => {
         let product = products.find((item) => item.id === id)
-        let updatedCart = [...cart]
-        updatedCart.push(product)
-        setCart(updatedCart);
-        localStorage.setItem("cart", JSON.stringify(updatedCart))
+        setCart([...cart,product]);
     }
     
     const removeFromCart = (id) => {
         let updatedCart = cart.filter((item) => item.id !== id)
         setCart(updatedCart)
-        localStorage.setItem("cart", JSON.stringify(updatedCart))
-        
     }
-
+    
     useEffect(() => {
-        localStorage.setItem("myProducts", JSON.stringify(products));
-    }, [products])
+        localStorage.setItem("cart", JSON.stringify(cart))
+    },[cart])
 
-    const handleDelete = (id) => {
-        let updatedProducts = products.filter((elem) => elem.id !== id)
-        localStorage.setItem("cart",JSON.stringify(updatedProducts))
-    }
+    
 
     return (
         <>
