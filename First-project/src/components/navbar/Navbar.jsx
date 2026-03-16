@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Navbar = () => {
+const Navbar = ({setIsOpen}) => {
     const [isVisible, setIsVisible] = useState(true)
     const [lastScrollY, setLastScrollY] = useState(0)
 
@@ -29,7 +29,7 @@ const Navbar = () => {
         fixed ${isVisible ? 'translate-y-0' : '-translate-y-full'} `}>
             <h1 className="py-2 font-semibold tracking-wider uppercase text-md sm:text-xl md:text-2xl  lg:text-3xl ">Our Products</h1>
             <div className=' flex text-sm  md:text-lg lg:text-xl gap-2 md:gap-4 items-center font-semibold underline-offset-3'>
-                <p className='cursor-pointer hover:underline'>Cart</p>
+                <p className='cursor-pointer hover:underline' onClick={() => setIsOpen(true)}>Cart</p>
                 <a href=""><p className='cursor-pointer hover:underline '>Login/Signup</p></a>
             </div>
         </div>

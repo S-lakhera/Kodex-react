@@ -1,5 +1,5 @@
 
-const Card = ({product,handleDelete,updateCart}) => {
+const Card = ({product,handleDelete,addToCart}) => {
 
     
     return (
@@ -14,7 +14,7 @@ const Card = ({product,handleDelete,updateCart}) => {
             <p className="text-green-300 font-semibold tracking-wider text-2xl py-4">₹{product.price} </p>
 
             <div className="flex-col flex md:flex-row px-3 pt-3 gap-x-3 justify-between">
-                <button className="bg-white text-black px-3 rounded-lg my-2 py-2 text-md font-semibold cursor-pointer text-sm active:scale-90 transition-transform duration-100 hover:bg-white/80" onClick={() => updateCart(product.id)}>Add to Cart</button>
+                <button className="bg-white text-black px-3 rounded-lg my-2 py-2 text-md font-semibold cursor-pointer text-sm active:scale-90 transition-transform duration-100 hover:bg-white/80" onClick={() => addToCart(product.id)}>Add to Cart</button>
                 <button className="bg-white text-black px-3 rounded-lg my-2 py-2 text-md font-semibold cursor-pointer text-sm active:scale-90 transition-transform duration-100 hover:bg-white/80" onClick={() => handleDelete(product.id)} >Delete</button>
             </div>
         </div>
