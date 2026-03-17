@@ -35,7 +35,7 @@ const Cart = ({ cart, setIsCartOpen,removeFromCart }) => {
 
         <div className='flex-1 overflow-y-auto p-6 bg-[#262626] no-scrollbar '>
           {cart.length > 0 ? (
-            <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {cart.map((product) => (
                 <Card 
                 key={product.id} 
