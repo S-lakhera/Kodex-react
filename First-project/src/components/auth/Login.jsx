@@ -4,7 +4,7 @@ const Login = ({setToggle,handleBackdropClick}) => {
     <div 
     onClick={handleBackdropClick}
     className='fixed inset-0 z-50 flex items-center justify-center w-full h-full backdrop-blur-xs bg-black/70' >
-      <div className='w-1/3 max-w-3xl rounded-2xl bg-[#171717] p-8 '>
+      <div className='w-md  rounded-2xl bg-[#171717] px-4 md:px-8 py-10 mx-2'>
 
       <div className='flex flex-col gap-y-6'>
 

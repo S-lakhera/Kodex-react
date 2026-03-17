@@ -55,7 +55,7 @@ const Cart = ({ cart, setIsCartOpen,removeFromCart }) => {
 
         <div className='p-3 flex justify-end'>
           <button 
-             className='bg-blue-500 cursor-pointer hover:bg-blue-600 text-white px-8 py-2 rounded-lg font-semibold'
+             className='bg-white  cursor-pointer hover:bg-white/80 text-black px-8 py-2 rounded-lg font-semibold'
              onClick={() => alert("Proceeding to checkout...")}
           >
             Checkout

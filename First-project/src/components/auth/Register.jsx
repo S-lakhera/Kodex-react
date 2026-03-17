@@ -4,9 +4,9 @@ const Register = ({setToggle,handleBackdropClick}) => {
     <div 
     onClick={handleBackdropClick}
     className='fixed inset-0 z-50 flex items-center justify-center w-full h-full backdrop-blur-xs bg-black/60' >
-      <div className='w-1/3 max-w-3xl rounded-2xl bg-[#171717] p-8 '>
+      <div className='w-md rounded-2xl bg-[#171717] px-3 md:px-6 py-10 '>
 
-      <div className='flex flex-col gap-y-6'>
+      <div className=' flex flex-col gap-y-6'>
 
         <div>
           <h1 className='text-2xl font-bold tracking-wider'>Create Account</h1>
