@@ -7,9 +7,8 @@ const Card = ({product,removeFromCart}) => {
             <div className="overflow-hidden rounded-xl">
                 <img src={product.image} alt="" className="rounded-xl  transition-scale duration-300  hover:scale-110" />
             </div>
-            <h1 className="text-2xl font-semibold my-5">{product.name}</h1>
+            <h1 className="text-2xl font-semibold mt-4 ">{product.name}</h1>
 
-            <p className="text-gray-400 font-semibold text-lg tracking-wider">{product.category}</p>
 
             <p className="text-green-300 font-semibold tracking-wider text-2xl py-1">₹{product.price} </p>
 
