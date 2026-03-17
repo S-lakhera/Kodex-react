@@ -25,7 +25,7 @@ const Navbar = ({ setIsCartOpen, setIsFormOpen }) => {
     }, [lastScrollY])
 
     return (
-        <div className={`w-full flex shadow-[0_5px_15px_rgb(0,0,0,0.2)] bg-black/10 backdrop-blur-sm justify-between px-3 sm:px-5  md:px-8 z-1
+        <div className={`w-full flex shadow-[0_5px_15px_rgb(0,0,0,0.2)] bg-black/10 backdrop-blur-sm justify-between px-3 sm:px-5  md:px-8 z-1 selection:bg-black selection:text-white
         fixed ${isVisible ? 'translate-y-0' : '-translate-y-full'} `}>
             <h1 className="py-2 font-semibold tracking-wider uppercase text-md sm:text-xl md:text-2xl  lg:text-3xl ">Our Products</h1>
             <div className=' flex text-sm  md:text-lg  gap-2 md:gap-4 items-center font-semibold underline-offset-3'>

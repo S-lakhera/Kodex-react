@@ -3,7 +3,7 @@ const Card = ({product,handleDelete,addToCart}) => {
 
     
     return (
-        <div className=" rounded-xl px-10 py-5 shadow-[0_5px_15px_rgb(0,0,0,0.2)] hover:shadow-[0_10px_15px_rgb(0,0,0,0.3)] hover:-mt-1 transition-all duration-300 cursor-pointer">
+        <div className=" rounded-xl px-10 py-5 shadow-[0_5px_15px_rgb(0,0,0,0.15)] hover:shadow-[0_10px_15px_rgb(0,0,0,0.2)] hover:-mt-1 transition-all duration-300 cursor-pointer selection:bg-black selection:text-white">
             <div className="overflow-hidden rounded-xl">
                 <img src={product.image} alt="" className="rounded-xl  transition-scale duration-300  hover:scale-110" />
             </div>

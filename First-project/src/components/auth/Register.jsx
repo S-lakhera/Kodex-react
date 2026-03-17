@@ -3,7 +3,7 @@ const Register = ({setToggle,handleBackdropClick}) => {
   return (
     <div 
     onClick={handleBackdropClick}
-    className='fixed inset-0 z-50 flex items-center justify-center w-full h-full backdrop-blur-xs bg-black/60' >
+    className='fixed inset-0 z-50 flex items-center justify-center w-full h-full backdrop-blur-xs bg-black/70' >
       <div className='w-md rounded-2xl bg-[#171717] px-3 md:px-6 py-10 '>
 
       <div className=' flex flex-col gap-y-6'>
