@@ -56,5 +56,5 @@ const Register = ({setToggle,handleBackdropClick}) => {
     </div>
   )
 }
-
+ 
 export default Register

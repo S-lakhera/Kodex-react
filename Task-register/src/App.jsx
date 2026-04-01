@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Login from "./components/Login.jsx"
 import Register from "./components/Register.jsx"
+// import { Activity } from "react"
 
 
 const App = () => {
@@ -9,6 +10,12 @@ const App = () => {
 
   return (
     <>
+    {/* <Activity mode={isVisible? "visible" : "hidden"} >
+      <Register fn={setIsVisible}/>
+    </Activity>
+    <Activity mode={!isVisible? "visible" : "hidden"} >
+      <Login fn={setIsVisible}/>
+    </Activity> */}
     {
       isVisible ? 
       <Register fn = {setIsVisible}/> :

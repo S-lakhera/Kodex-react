@@ -25,7 +25,7 @@ const Register = ({fn}) => {
         <input type="password" id="password" placeholder=" .........." className="bg-black/30 outline-none p-2 rounded-lg mx-1" />
       </div>
       <div className=" px-2 mt-3">
-        <button className="py-2 bg-slate-900 hover:bg-slate-800/60 transition-all duration-400 rounded-xl w-full cursor-pointer active:scale-90">Sign up</button>
+        <button className="py-2 bg-blue-700 hover:bg-blue-700/60 transition-all duration-400 rounded-xl w-full cursor-pointer active:scale-90">Sign up</button>
       </div>
       <div className="py-1">
         <p className="text-sm text-gray-400">Already have an account? <span className="text-white hover:underline cursor-pointer underline-offset-3 hover:text-blue-300 transition-all duration-300" onClick={() => fn((prev) => !prev)}>Sign in</span></p>
