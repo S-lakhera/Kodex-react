@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { CardImage } from './components/local/cardImage'
+import { ProductCard } from './components/local/ProductCard'
 import Navbar from './components/local/Navbar'
 
 
@@ -9,7 +9,7 @@ const App = () => {
     <>
     <Navbar/>
       This is app
-      <CardImage/>
+      <ProductCard/>
     </>
   )
 }

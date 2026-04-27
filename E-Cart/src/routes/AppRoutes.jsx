@@ -10,7 +10,7 @@ const AppRoutes = () => {
     return (
         <>
             <Navbar/>
-            <div className='px-10 py-5'>
+            <div className='px-10 py-5 '>
                 <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />

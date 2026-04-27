@@ -1,5 +1,5 @@
-import { CardImage } from '@/components/local/cardImage';
-import { SkeletonCard } from '@/components/local/SkeletonCard';
+
+import CartItemCard from '@/components/local/CartItemCard';
 import { clearCart } from '@/features/cartSlice';
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -8,15 +8,14 @@ const Cart = () => {
 
   const { cartItem } = useSelector((store) => store.cart)
   const dispatch = useDispatch();
-  // console.log(cart);
-
+  
   if (cartItem.length > 0) {
     return (
-      <>
-        <div className='grid grid-cols-3 gap-10 '>
+      <div className='w-full flex justify-center flex-col items-center'>
+        <div className='flex flex-col w-3/5 justify-center'>
 
           {
-            cartItem?.map((pro) => <CardImage product={pro} key={pro.id} />)
+            cartItem?.map((pro) => <CartItemCard item={pro} key={pro.id} />)
           }
 
         </div>
@@ -25,7 +24,7 @@ const Cart = () => {
           onClick={() => dispatch(clearCart())}
           className=" px-5 w-40 bg-white text-black  py-2 text-lg rounded-lg">Clear Cart</button>
         </div>
-      </>
+      </div>
     )
   }
   else{
